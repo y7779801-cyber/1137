@@ -1,0 +1,109 @@
+# Your patch layer for this dsh profile, applied after every bundle layer:
+# a top-level YAML array of loader patch entries (id-targeted config
+# overrides, disables, and insert lists; `!!js` expressions allowed).
+- id: agent-default-model
+  name: "@deepseek-ai/dsh-agent-default-model"
+  config:
+    provider: antigravity-vision
+    model: gemini-3.8-flash
+    reasoningEffort: high
+- id: ui-settings-account
+  name: "@deepseek-ai/dsh-client-ui-settings-account"
+  config:
+    version: 1
+    step: done
+    purpose: null
+    process: standard
+    completion: skipped
+    usage: compact
+    developerTools: false
+- id: ui-chat
+  name: "@deepseek-ai/dsh-client-ui-chat"
+  config:
+    transcriptView: standard
+    performanceUsage: compact
+- id: ui-settings
+  name: "@deepseek-ai/dsh-client-ui-settings"
+  config:
+    enabled: false
+- id: agent-preset-registry
+  name: "@deepseek-ai/dsh-agent-preset-registry"
+  config:
+    default: standard
+    selectedDefault: standard
+- id: ui-theme
+  name: "@deepseek-ai/dsh-client-ui-theme"
+  config:
+    preference: dark
+- id: modlens
+  disabled: true
+- id: vision-router
+  name: dsh-vision-router
+  config:
+    progressiveTools: false
+    onboardingSeen: true
+- id: agency-agents
+  name: "@michengai/dsh-agency-agents"
+  config:
+    sidebarEntry: true
+- id: dsh-tui-storage
+  disabled: true
+- id: dsh-tui-storage-json
+  disabled: true
+- id: dsh-tui-storage-domain
+  disabled: true
+- id: dsh-tui-workspace
+  disabled: true
+- id: dsh-tui-code-runtime
+  disabled: true
+- id: dsh-tui-subagent-model-selection-settings
+  disabled: true
+- id: dsh-tui-workspaces
+  disabled: true
+- id: dsh-tui-command-trees
+  disabled: true
+- id: dsh-tui-settings-sections
+  disabled: true
+- id: dsh-tui-scenes
+  disabled: true
+- id: dsh-tui-panels
+  disabled: true
+- id: dsh-tui-plugin-host
+  disabled: true
+- id: dsh-tui-extensions
+  disabled: true
+- id: dsh-tui-agent-presets
+  disabled: true
+- id: dsh-tui-agent-preset-registry
+  disabled: true
+- id: dsh-tui-cordis-host-runner
+  disabled: true
+- id: dsh-tui-webserver
+  disabled: true
+- id: dsh-tui-auth
+  disabled: true
+- id: dsh-tui
+  disabled: true
+- id: working-activity
+  disabled: true
+- id: dsh-ops-shell
+  name: dsh-ops/shell
+  config:
+    promptPolicy: true
+    publishBashTool: true
+    shellPolicy: advise
+    allowSystemShellFallback: false
+    configUpdateVersion: 2
+- id: dsh-ops-file
+  name: dsh-ops/file
+  config:
+    promptPolicy: true
+    required: false
+    configUpdateVersion: 2
+- id: liang-intensity-skin
+  disabled: true
+- id: web
+  name: "@deepseek-ai/dsh-web"
+  config:
+    searchProvider: ddg
+    fetchProvider: fs-quality-fetch

@@ -1,0 +1,56 @@
+{
+  "name": "dsh-profile-desktop",
+  "private": true,
+  "dependencies": {
+    "@deepseek-harness-tui/dsh-tui": "0.17.0",
+    "@leon___/dsh-client-liang-intensity-skin": "0.1.12",
+    "@liustack/modlens": "3.27.2",
+    "@michengai/dsh-agency-agents": "1.2.13",
+    "@michengai/dsh-im-connect": "1.0.17",
+    "@michengai/dsh-pua": "1.0.3",
+    "@opencode2dsh/dsh-plugin": "0.3.14",
+    "@paicat1/dsh-screenshot": "1.2.0",
+    "@vectorize-io/hindsight-coding-agents": "0.8.2",
+    "@xmanrui/dsh-im": "5.6.0",
+    "dsh-agy-link": "0.4.67",
+    "dsh-context": "0.75.1",
+    "dsh-free-search": "0.9.15",
+    "dsh-opencode-session": "0.1.1",
+    "dsh-ops": "0.4.1",
+    "dsh-pet": "0.3.8",
+    "dsh-plugin-iot-thinking": "link:C:/Users/EDY/.dsh/plugins/dsh-plugin-iot-thinking",
+    "dsh-screenshot": "file:C:/Users/EDY/.gemini/antigravity-cli/brain/7b46943c-2b18-4af5-9e1e-c2365514992f/scratch/dsh-screenshot-2.3.0.tgz",
+    "dsh-vision-router": "3.1.0",
+    "dsh-whale-widget": "0.4.2",
+    "dshmarket": "^1.70.1"
+  },
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "@deepseek-ai/dsh-experimental-plugin-market-bundle",
+        "@deepseek-ai/dsh-experimental-auto-review",
+        "@deepseek-ai/dsh-experimental-agent-team-profile",
+        "dshmarket",
+        "dsh-whale-widget",
+        "dsh-context",
+        "@michengai/dsh-im-connect",
+        "@xmanrui/dsh-im",
+        "@vectorize-io/hindsight-coding-agents",
+        "@michengai/dsh-pua",
+        "dsh-opencode-session",
+        "@opencode2dsh/dsh-plugin",
+        "dsh-agy-link",
+        "dsh-pet",
+        "dsh-vision-router",
+        "@michengai/dsh-agency-agents",
+        "dsh-screenshot",
+        "dsh-ops",
+        "@deepseek-harness-tui/dsh-tui",
+        "dsh-free-search",
+        "dsh-plugin-iot-thinking"
+      ]
+    }
+  }
+}

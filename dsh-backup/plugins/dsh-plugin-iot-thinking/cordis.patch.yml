@@ -1,0 +1,19 @@
+# dsh bundle patch: IoT thinking-block rewriting.
+# 装成 bundle 后这一行自动成为 profile 组合的一层；不改 `ctx.compaction`，
+# 所以没有 checkpoint、没有"上下文已压缩"消息。
+#
+# ⚠️ llm/stream 是 waterfall 且不过 scope filter：挂在某个 preset 组里也照样对
+# 整进程生效。所以"哪段会话用哪档"写在钩子里解析，不靠挂载位置。
+- insert:
+    - id: iot-thinking
+      name: 'dsh-plugin-iot-thinking'
+      config:
+        # 这些只是默认值；开关、档位与逐档限制在
+        # $DSH_HOME/plugin-data/iot-thinking/config.json（设置卡或 /iot 命令改）。
+        enabled: true
+        strategy: iot-full
+        # 400–500 区间收益很薄，想回本可在卡片里调到 700–900。
+        minChars: 400
+        maxTokens: 2000
+        # 覆盖 reasoningEffort 时值必须加引号：YAML 1.1 会把裸 off 解析成 false。
+        archive: true
